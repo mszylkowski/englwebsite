@@ -1,0 +1,49 @@
+html {
+    min-height: 100vh;
+    min-height: 100%;
+}
+
+body {
+    padding-top: 60px;
+    background-color: #555555;
+}
+
+.container {
+    background-color: #f8f8f8;
+}
+
+.jumbotron-login {
+    max-width: 400px;
+}
+
+.hor-divider {
+    height: 1px;
+    background-color: lightgrey;
+}
+
+.footer {
+    padding-top: 20px;
+}
+
+.footer p {
+    color: white;
+}
+
+.pagination-div {
+    text-align: center;
+}
+
+.pagination {
+    display: inline-block;
+}
+
+.news-item {
+    padding-bottom: 20px;
+}
+
+.about-container {
+    background-image: url("http://www.mycariboonow.com/wp-content/uploads/2015/04/home_healthcare.jpg");
+    height: 100vh;
+    margin: 0px;
+    background-size: cover;
+}

@@ -5,7 +5,7 @@ html {
 
 body {
     padding-top: 60px;
-    background-color: #555555;
+    background-color: #333;
 }
 
 .container {
@@ -13,7 +13,17 @@ body {
 }
 
 .jumbotron-login {
-    max-width: 400px;
+    text-align: left;
+    width: 30vw;
+    min-width: 330px;
+    max-width: 360px;
+    margin-top: 20vh;
+    display: inline-block;
+    /*transform: translate(-50%, -50%);*/
+}
+
+#login-jumbo {
+    padding: 30px 60px;
 }
 
 .hor-divider {

@@ -12,6 +12,10 @@ body {
     background-color: #f8f8f8;
 }
 
+.news-page {
+    max-width: 700px;
+}
+
 .jumbotron-login {
     text-align: left;
     width: 30vw;
@@ -24,6 +28,10 @@ body {
 
 #login-jumbo {
     padding: 30px 60px;
+}
+
+.news-item h2 a {
+    color: black;
 }
 
 .hor-divider {
@@ -41,6 +49,11 @@ body {
 
 .pagination-div {
     text-align: center;
+}
+
+.form-control {
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 
 .pagination {

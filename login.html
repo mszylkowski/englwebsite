@@ -7,7 +7,7 @@
     </head>
     
     <body>
-        <div class="container"  style="background-color: #555555">
+        <div class="container"  style="background-color: #333">
             <nav class="navbar navbar-default navbar-fixed-top main-navbar">
                 <div class="container" id="main-navbar">
                     <!-- Brand and toggle get grouped for better mobile display -->
@@ -46,30 +46,20 @@
             </nav>
             <div style="text-align: center;align-content: center; overflow-y: hidden"><!-- body of webpage -->
                 <div class="jumbotron jumbotron-login" id="login-jumbo">
-                    <form class="form-horizontal form-short">
+                    <form class="form-horizontal form-short" onsubmit="return login()">
                         <fieldset>
-                            <legend>Sign in</legend>
+                            <legend style="margin-left:-12px;">Sign in</legend>
                             <div class="form-group">
-                                <div>
-                                    <input type="text" class="form-control" id="inputEmail" placeholder="Username">
+                                <input type="text" class="form-control" id="username" placeholder="Username">
+                                <input type="password" class="form-control" id="inputPassword" placeholder="Password">
+                                <div class="checkbox" style="margin-bottom: 8px">
+                                    <label>
+                                        <input type="checkbox"/> Remember
+                                    </label>
                                 </div>
+                                <button type="submit" class="btn btn-primary btn-block">Log in</button>
+                                <label>Don't have an account? <a href="#register">Register</a></label>
                             </div>
-                            <div class="form-group">
-                                <div>
-                                    <input type="password" class="form-control" id="inputPassword" placeholder="Password">
-                                    <div class="checkbox">
-                                        <label>
-                                            <input type="checkbox"/> Remember
-                                        </label>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <div>
-                                    <button type="submit" class="btn btn-primary btn-block">Log in</button>
-                                </div>
-                            </div>
-                            <label>Don't have an account? <a href="#register">Register</a></label>
                         </fieldset>
                     </form>
                 </div>

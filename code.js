@@ -12,9 +12,11 @@ function show_login() {
 
 function login() {
     if ($("#username").val() == "crake") {
-        window.open('users/crake/dashboard.html';'_self');
+        window.location = ("users/crake/dashboard.html");
+        return(false);
     } else if ($("#username").val() == "jimmy") {
-        window.open('users/jimmy/dashboard.html';'_self');
+        window.open('users/jimmy/dashboard.html','_self');
+        return(false);
     } else {
         alert("wrong input: " + $("#username").val());
     }

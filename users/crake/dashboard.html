@@ -3,15 +3,17 @@
     <head>
         <title>HelthWyzer - Dashboard</title>
         <!-- Latest compiled and minified CSS -->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
         
         <link rel="stylesheet" href="https://bootswatch.com/lumen/bootstrap.css">
         <link rel="stylesheet" href="../../styles.css">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.bundle.js"></script>
     </head>
     
     <body>
-        <div class="container">
+        <div class="container body-container">
             <nav class="navbar navbar-default navbar-fixed-top main-navbar">
                 <div class="container" id="main-navbar">
                     <!-- Brand and toggle get grouped for better mobile display -->
@@ -34,22 +36,50 @@
                             <li class="dropdown">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Subsidiaries <span class="caret"></span></a>
                                 <ul class="dropdown-menu">
-                                    <li><a href="#">NooSkins</a></li>
-                                    <li><a href="#">AnooYoo</a></li>
-                                    <li><a href="#">RejoovenEsense</a></li>
+                                    <li><a href="../../404.html">NooSkins</a></li>
+                                    <li><a href="../../404.html">AnooYoo</a></li>
+                                    <li><a href="../../404.html">RejoovenEsense</a></li>
                                 </ul>
                             </li>
                         </ul>
                         <div class="nav navbar-nav navbar-right">
-                            <form class="navbar-form navbar-left" action="login.html">
-                                <button type="submit" class="btn btn-primary">Sign in</button>
+                            <p class="navbar-text">Signed in as Crake</p>
+                            <form class="navbar-form navbar-left" action="../../index.html">
+                                <button type="submit" class="btn btn-primary">Sign out</button>
                             </form>
                         </div>
                     </div><!-- /.navbar-collapse -->
                 </div><!-- /.container-fluid -->
             </nav>
-            <div><!-- body of webpage -->
-                Crake
+            <div class="row dashboard"><!-- body of webpage -->
+                <div class="col-md-4 dashboard-left-col">
+                    <canvas id="myChart" width="100" height="100"></canvas>
+                    <script>
+                        var ctx = document.getElementById("myChart");
+                        var myChart = new Chart(ctx, {
+                            type: 'line',
+                            data: {
+                                datasets: [{
+                                    label: 'Savings',
+                                    data: [12, 19, 3, 5, 2, 3]
+                                }]
+                            },
+                            options: {
+                                scales: {
+                                    yAxes: [{
+                                        ticks: {
+                                            beginAtZero:true
+                                        }
+                                    }]
+                                }
+                            }
+                        });
+                    </script>
+<p>Made by Maria Ramos, Matias Szylkowski, Simon Moreno and Vicente Blat. All materials are property of HelthWyzer Inc. Website designed based on the novel "Oryx and Crake" by Margaret Atwood.</p>
+                </div>
+                <div class="col-md-8 dashboard-right-col">
+                    <p>Made by Maria Ramos, Matias Szylkowski, Simon Moreno and Vicente Blat. All materials are property of HelthWyzer Inc. Website designed based on the novel "Oryx and Crake" by Margaret Atwood.</p>
+                </div>
             </div>
         </div>
         

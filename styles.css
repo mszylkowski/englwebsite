@@ -3,6 +3,10 @@ html {
     min-height: 100%;
 }
 
+.main-navbar {
+    box-shadow: 0px 0px 10px 0px black;
+}
+
 body {
     padding-top: 60px;
     background-color: #224;
@@ -29,6 +33,25 @@ body .body-container {
 
 .news-page {
     max-width: 700px;
+}
+
+.title-background {
+    margin-left: -15px;
+    margin-right: -15px;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    padding: 15vh;
+}
+
+.title-text {
+    color: white;
+    font-size: 15vh;
+    text-shadow: 0px 0px 20px black;
+    text-shadow: 0px 0px 20px black;
 }
 
 .jumbotron-login {
@@ -74,11 +97,4 @@ body .body-container {
 
 .news-item {
     padding-bottom: 20px;
-}
-
-.about-container {
-    background-image: url("http://www.mycariboonow.com/wp-content/uploads/2015/04/home_healthcare.jpg");
-    height: 100vh;
-    margin: 0px;
-    background-size: cover;
 }

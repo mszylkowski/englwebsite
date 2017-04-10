@@ -8,6 +8,7 @@
         <link rel="stylesheet" href="https://bootswatch.com/lumen/bootstrap.css">
         <link rel="stylesheet" href="../../styles.css">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/png" href="../../icon.png">
         
         <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.bundle.js"></script>
     </head>
@@ -55,33 +56,121 @@
                 <p>Please treat all material in this page as confidential. Do not allow other members of the institution access this dashboard</p>
                 <div class="row dashboard">
                     <div class="col-md-4 dashboard-left-col">
-                        <canvas id="myChart" width="100" height="100"></canvas>
+
+                        <p>Made by Maria Ramos, Matias Szylkowski, Simon Moreno and Vicente Blat. All materials are property of HelthWyzer Inc. Website designed based on the novel "Oryx and Crake" by Margaret Atwood.</p>
+                    </div>
+                    <div class="col-md-8 dashboard-right-col">
+                        <h2>Welcome back Crake!</h2>
+                        <canvas id="myChart" height="200"></canvas>
                         <script>
                             var ctx = document.getElementById("myChart");
                             var myChart = new Chart(ctx, {
                                 type: 'line',
                                 data: {
-                                    datasets: [{
-                                        label: 'Savings',
-                                        data: [12, 19, 3, 5, 2, 3]
-                                    }]
+                                    labels: ["Year 1", "Year 2", "Year 3", "Year 4", "Year 5", "Year 6", "Year 7"],
+                                    datasets: [
+                                        {
+                                            label: "Successes",
+                                            fill: true,
+                                            lineTension: 0.1,
+                                            backgroundColor: "rgb(177, 231, 231)",
+                                            borderColor: "rgba(75,192,192,1)",
+                                            borderJoinStyle: 'miter',
+                                            pointBorderColor: "rgba(75,192,192,1)",
+                                            pointBackgroundColor: "#fff",
+                                            data: [5, 20, 9, 36, 47, 63, 80],
+                                            spanGaps: false,
+                                        },
+                                        {
+                                            label: "Secondary effects",
+                                            fill: true,
+                                            lineTension: 0.1,
+                                            backgroundColor: "rgb(255, 223, 184)",
+                                            borderColor: "rgba(255, 159, 64, 1)",
+                                            borderJoinStyle: 'miter',
+                                            pointBorderColor: "rgba(255, 159, 64, 1)",
+                                            pointBackgroundColor: "#fff",
+                                            data: [71, 61, 75, 57, 52, 35, 17],
+                                            spanGaps: false,
+                                        },
+                                        {
+                                            label: "Casualties",
+                                            fill: true,
+                                            lineTension: 0.1,
+                                            backgroundColor: "rgb(255, 199, 209)",
+                                            borderColor: "rgba(255, 99, 132, 1)",
+                                            borderJoinStyle: 'miter',
+                                            pointBorderColor: "rgba(255, 99, 132, 1)",
+                                            pointBackgroundColor: "#fff",
+                                            data: [65, 59, 53, 40, 33, 21, 15],
+                                            spanGaps: false,
+                                        }
+                                    ]
                                 },
                                 options: {
+                                    title: {
+                                        display: true,
+                                        text: 'BlyssPluss results per year'
+                                    },
                                     scales: {
                                         yAxes: [{
                                             ticks: {
                                                 beginAtZero:true
-                                            }
+                                            },
+                                            stacked: true
                                         }]
                                     }
                                 }
                             });
                         </script>
-    <p>Made by Maria Ramos, Matias Szylkowski, Simon Moreno and Vicente Blat. All materials are property of HelthWyzer Inc. Website designed based on the novel "Oryx and Crake" by Margaret Atwood.</p>
-                    </div>
-                    <div class="col-md-8 dashboard-right-col">
-                        <h2>Welcome back Crake!</h2>
-                        <p>Made by Maria Ramos, Matias Szylkowski, Simon Moreno and Vicente Blat. All materials are property of HelthWyzer Inc. Website designed based on the novel "Oryx and Crake" by Margaret Atwood.</p>
+                        <div class="panel panel-primary">
+                            <div class="panel-heading"><b>Captain Becker:</b> CorpSeCorps Interrogation</div>
+                            <div class="panel-body">
+                                <p>We have reason to believe operatives under your command are fugitives that have been hiding from our reach for years. They pose a threat to everyone's security, so I demand you allow us to speak with them. I'll be awaiting your reply.</p>  
+                                <p class="date">April 8, 19:25</p>
+                            </div>
+                            <div class="panel-footer">
+                                <div class="flexrow" style="text-align:center">
+                                    <div><a href="#" style="display:table-cell"><img src="../../images/reply.png"></a></div>
+                                    <div><a href="#" style="display:table-cell"><img src="../../images/reply-all.png"></a></div>
+                                    <div><a href="#" style="display:table-cell"><img src="../../images/forward.png"></a></div>
+                                    <div><a href="#" style="display:table-cell"><img src="../../images/star.png"></a></div>
+                                    <div><a href="#" style="display:table-cell"><img src="../../images/delete.png"></a></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-primary">
+                            <div class="panel-heading"><b>White Rhino:</b> Splicing Problem</div>
+                            <div class="panel-body">
+                                <p>Grandmaster, we have ran into a problem when attempting to splice genes from the rattlesnake with the purring from the cats; we are attempting to fix it but the team would appreciate your feedback if possible. Thank you.</p>     
+                                <p class="date">April 5, 13:42</p>
+                            </div>
+                            <div class="panel-footer">
+                                <div class="flexrow" style="text-align:center">
+                                    <div><a href="#" style="display:table-cell"><img src="../../images/reply.png"></a></div>
+                                    <div><a href="#" style="display:table-cell"><img src="../../images/reply-all.png"></a></div>
+                                    <div><a href="#" style="display:table-cell"><img src="../../images/forward.png"></a></div>
+                                    <div><a href="#" style="display:table-cell"><img src="../../images/star.png"></a></div>
+                                    <div><a href="#" style="display:table-cell"><img src="../../images/delete.png"></a></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-primary">
+                            <div class="panel-heading"><img src="../../images/attachment.png" style="height:20px"><b>Jimmy:</b> Advertising Developments</div>
+                            <div class="panel-body">
+                                <p>Yo, I know you told me that this is completely up to me and that you trust my judgement but I just want you to see what I've been up to. Pretty sure it's almost finished, just debating the last logo. The image is attached so just look at it and let me know.</p>     
+                                <p class="date">April 5, 13:42</p>
+                            </div>
+                            <div class="panel-footer">
+                                <div class="flexrow" style="text-align:center">
+                                    <div><a href="#" style="display:table-cell"><img src="../../images/reply.png"></a></div>
+                                    <div><a href="#" style="display:table-cell"><img src="../../images/reply-all.png"></a></div>
+                                    <div><a href="#" style="display:table-cell"><img src="../../images/forward.png"></a></div>
+                                    <div><a href="#" style="display:table-cell"><img src="../../images/star.png"></a></div>
+                                    <div><a href="#" style="display:table-cell"><img src="../../images/delete.png"></a></div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

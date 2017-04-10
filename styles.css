@@ -192,3 +192,26 @@ p {
 .news-item {
     padding-bottom: 20px;
 }
+
+.flexrow {
+    display: flex;
+}
+.flexrow > * {
+    flex: 1;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+a>img:hover {
+    opacity: 0.5;
+    filter: alpha(opacity=50); /* For IE8 and earlier */
+}
+
+.panel-heading {
+    font-size: 18px;
+}
+
+.date {
+    color: darkgrey;
+}

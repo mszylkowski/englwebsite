@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>HelthWyzer - Home</title>
+        <title>HelthWyzer - Surveillance</title>
         <!-- Latest compiled and minified CSS -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
         
         <link rel="stylesheet" href="https://bootswatch.com/lumen/bootstrap.css">
-        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="../../styles.css">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="icon" type="image/png" href="icon.png">
+        <link rel="icon" type="image/png" href="../../icon.png">
+        
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.bundle.js"></script>
     </head>
     
     <body>
@@ -23,38 +25,27 @@
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                         </button>
-                        <a class="navbar-brand" href="index.html"><img src="helthwyzer.png" height="20px" class="d-inline-block align-top"></a>
+                        <a class="navbar-brand" href="index.html"><img src="../../helthwyzer.png" height="20px" class="d-inline-block align-top"></a>
                     </div>
 
                     <!-- Collect the nav links, forms, and other content for toggling -->
                     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                         <ul class="nav navbar-nav">
-                            <li><a href="about-us.html">About us</a></li>
-                            <li><a href="our-products.html">Our products</a></li>
+                            <li><a href="dashboard.html">Dashboard</a></li>
+                            <li class="active"><a href="surveillance.html">Surveillance</a></li>
                             <li><a href="news.html">News</a></li>
-                            <li class="dropdown">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Subsidiaries <span class="caret"></span></a>
-                                <ul class="dropdown-menu">
-                                    <li><a href="404.html">NooSkins</a></li>
-                                    <li><a href="404.html">AnooYoo</a></li>
-                                    <li><a href="404.html">RejoovenEsense</a></li>
-                                </ul>
-                            </li>
                         </ul>
                         <div class="nav navbar-nav navbar-right">
-                            <form class="navbar-form navbar-left" action="login.html">
-                                <button type="submit" class="btn btn-primary">Sign in</button>
+                            <p class="navbar-text">Signed in as Crake</p>
+                            <form class="navbar-form navbar-left" action="../../index.html">
+                                <button type="submit" class="btn btn-primary">Sign out</button>
                             </form>
                         </div>
                     </div><!-- /.navbar-collapse -->
                 </div><!-- /.container-fluid -->
             </nav>
-            <div><!-- body of webpage -->
-                <div class="homepage-image" style="padding:20px">
-                    <h1 class="title-text" style="font-size:40px;margin:0px;padding:0px">Meet our experts</h1>
-                    <h1 class="title-text" style="font-size:20px;padding:0px;margin:0px">Highly trained professionals with extensive research background</h1>
-                </div>
-                <img src="helthwyzer.png" style="max-width:100%">
+            <div style="text-align:center"><!-- body of webpage -->
+                <img src="https://cdn.shutterstock.com/shutterstock/videos/8037439/thumb/1.jpg" style="display:inline-block">
             </div>
         </div>
         
@@ -64,6 +55,6 @@
         
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-        <script src="code.js"></script>
+        <script src="../../code.js"></script>
     </body>
 </html>

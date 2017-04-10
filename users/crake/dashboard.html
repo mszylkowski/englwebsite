@@ -25,23 +25,15 @@
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                         </button>
-                        <a class="navbar-brand" href="../../index.html"><img src="../../helthwyzer.png" height="20px" class="d-inline-block align-top"></a>
+                        <a class="navbar-brand" href="index.html"><img src="../../helthwyzer.png" height="20px" class="d-inline-block align-top"></a>
                     </div>
 
                     <!-- Collect the nav links, forms, and other content for toggling -->
                     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                         <ul class="nav navbar-nav">
-                            <li><a href="../../about-us.html">About us</a></li>
-                            <li><a href="../../our-products.html">Our products</a></li>
-                            <li><a href="../../news.html">News</a></li>
-                            <li class="dropdown">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Subsidiaries <span class="caret"></span></a>
-                                <ul class="dropdown-menu">
-                                    <li><a href="../../404.html">NooSkins</a></li>
-                                    <li><a href="../../404.html">AnooYoo</a></li>
-                                    <li><a href="../../404.html">RejoovenEsense</a></li>
-                                </ul>
-                            </li>
+                            <li class="active"><a href="dashboard.html">Dashboard</a></li>
+                            <li><a href="surveillance.html">Surveillance</a></li>
+                            <li><a href="news.html">News</a></li>
                         </ul>
                         <div class="nav navbar-nav navbar-right">
                             <p class="navbar-text">Signed in as Crake</p>
@@ -53,76 +45,33 @@
                 </div><!-- /.container-fluid -->
             </nav>
             <div><!-- body of webpage -->
-                <p>Please treat all material in this page as confidential. Do not allow other members of the institution access this dashboard</p>
+                <div class="alert alert-dismissible alert-danger">
+                    <button type="button" class="close" data-dismiss="alert">&times;</button>
+                    Please treat all material in this page as confidential. Do not allow other members of the institution access this dashboard.
+                </div>
+                <h2 style="padding:0px">Welcome back Crake!</h2>
                 <div class="row dashboard">
                     <div class="col-md-4 dashboard-left-col">
-
-                        <p>Made by Maria Ramos, Matias Szylkowski, Simon Moreno and Vicente Blat. All materials are property of HelthWyzer Inc. Website designed based on the novel "Oryx and Crake" by Margaret Atwood.</p>
+                        <p style="font-size:30px">Memos</p>
+                        <div class="alert alert-dismissible alert-info">
+                            <button type="button" class="close" data-dismiss="alert">&times;</button>
+                            -Meeting with several investors later on this week, check with Oryx
+                        </div>
+                        <div class="alert alert-dismissible alert-info">
+                            <button type="button" class="close" data-dismiss="alert">&times;</button>
+                            -Check up on Black Rhino's messages/ internet for possible leaks
+                        </div>
+                        <div class="alert alert-dismissible alert-info">
+                            <button type="button" class="close" data-dismiss="alert">&times;</button>
+                            -Execute operative Indian Tiger for gathering of files off the main database
+                        </div>
+                        <div class="alert alert-dismissible alert-info">
+                            <button type="button" class="close" data-dismiss="alert">&times;</button>
+                            -Prepare for activation of BlyssPluss
+                        </div>
                     </div>
                     <div class="col-md-8 dashboard-right-col">
-                        <h2>Welcome back Crake!</h2>
-                        <canvas id="myChart" height="200"></canvas>
-                        <script>
-                            var ctx = document.getElementById("myChart");
-                            var myChart = new Chart(ctx, {
-                                type: 'line',
-                                data: {
-                                    labels: ["Year 1", "Year 2", "Year 3", "Year 4", "Year 5", "Year 6", "Year 7"],
-                                    datasets: [
-                                        {
-                                            label: "Successes",
-                                            fill: true,
-                                            lineTension: 0.1,
-                                            backgroundColor: "rgb(177, 231, 231)",
-                                            borderColor: "rgba(75,192,192,1)",
-                                            borderJoinStyle: 'miter',
-                                            pointBorderColor: "rgba(75,192,192,1)",
-                                            pointBackgroundColor: "#fff",
-                                            data: [5, 20, 9, 36, 47, 63, 80],
-                                            spanGaps: false,
-                                        },
-                                        {
-                                            label: "Secondary effects",
-                                            fill: true,
-                                            lineTension: 0.1,
-                                            backgroundColor: "rgb(255, 223, 184)",
-                                            borderColor: "rgba(255, 159, 64, 1)",
-                                            borderJoinStyle: 'miter',
-                                            pointBorderColor: "rgba(255, 159, 64, 1)",
-                                            pointBackgroundColor: "#fff",
-                                            data: [71, 61, 75, 57, 52, 35, 17],
-                                            spanGaps: false,
-                                        },
-                                        {
-                                            label: "Casualties",
-                                            fill: true,
-                                            lineTension: 0.1,
-                                            backgroundColor: "rgb(255, 199, 209)",
-                                            borderColor: "rgba(255, 99, 132, 1)",
-                                            borderJoinStyle: 'miter',
-                                            pointBorderColor: "rgba(255, 99, 132, 1)",
-                                            pointBackgroundColor: "#fff",
-                                            data: [65, 59, 53, 40, 33, 21, 15],
-                                            spanGaps: false,
-                                        }
-                                    ]
-                                },
-                                options: {
-                                    title: {
-                                        display: true,
-                                        text: 'BlyssPluss results per year'
-                                    },
-                                    scales: {
-                                        yAxes: [{
-                                            ticks: {
-                                                beginAtZero:true
-                                            },
-                                            stacked: true
-                                        }]
-                                    }
-                                }
-                            });
-                        </script>
+                        <p style="font-size:30px">Messages</p>
                         <div class="panel panel-primary">
                             <div class="panel-heading"><b>Captain Becker:</b> CorpSeCorps Interrogation</div>
                             <div class="panel-body">
@@ -188,6 +137,85 @@
                                 </div>
                             </div>
                         </div>
+                        <div class="panel panel-primary">
+                            <div class="panel-heading"><b> Polar Bear:</b> BlyssPluss Report</div>
+                            <div class="panel-body">
+                                <p>We have just reseased the report for this year about BlyssPluss. Great improvement from last year, as you can see.</p>
+                                <canvas id="myChart" height="200"></canvas>
+                                <script>
+                                    var ctx = document.getElementById("myChart");
+                                    var myChart = new Chart(ctx, {
+                                        type: 'line',
+                                        data: {
+                                            labels: ["Year 1", "Year 2", "Year 3", "Year 4", "Year 5", "Year 6", "Year 7"],
+                                            datasets: [
+                                                {
+                                                    label: "Successes",
+                                                    fill: true,
+                                                    lineTension: 0.1,
+                                                    backgroundColor: "rgb(177, 231, 231)",
+                                                    borderColor: "rgba(75,192,192,1)",
+                                                    borderJoinStyle: 'miter',
+                                                    pointBorderColor: "rgba(75,192,192,1)",
+                                                    pointBackgroundColor: "#fff",
+                                                    data: [5, 20, 9, 36, 47, 63, 80],
+                                                    spanGaps: false,
+                                                },
+                                                {
+                                                    label: "Secondary effects",
+                                                    fill: true,
+                                                    lineTension: 0.1,
+                                                    backgroundColor: "rgb(255, 223, 184)",
+                                                    borderColor: "rgba(255, 159, 64, 1)",
+                                                    borderJoinStyle: 'miter',
+                                                    pointBorderColor: "rgba(255, 159, 64, 1)",
+                                                    pointBackgroundColor: "#fff",
+                                                    data: [71, 61, 75, 57, 52, 35, 17],
+                                                    spanGaps: false,
+                                                },
+                                                {
+                                                    label: "Casualties",
+                                                    fill: true,
+                                                    lineTension: 0.1,
+                                                    backgroundColor: "rgb(255, 199, 209)",
+                                                    borderColor: "rgba(255, 99, 132, 1)",
+                                                    borderJoinStyle: 'miter',
+                                                    pointBorderColor: "rgba(255, 99, 132, 1)",
+                                                    pointBackgroundColor: "#fff",
+                                                    data: [65, 59, 53, 40, 33, 21, 15],
+                                                    spanGaps: false,
+                                                }
+                                            ]
+                                        },
+                                        options: {
+                                            title: {
+                                                display: true,
+                                                text: 'BlyssPluss results per year'
+                                            },
+                                            scales: {
+                                                yAxes: [{
+                                                    ticks: {
+                                                        beginAtZero:true
+                                                    },
+                                                    stacked: true
+                                                }]
+                                            }
+                                        }
+                                    });
+                                </script>
+                                <p class="date">April 2, 15:01</p>
+                            </div>
+                            <div class="panel-footer">
+                                <div class="flexrow" style="text-align:center">
+                                    <div><a href="#" style="display:table-cell"><img src="../../images/reply.png"></a></div>
+                                    <div><a href="#" style="display:table-cell"><img src="../../images/reply-all.png"></a></div>
+                                    <div><a href="#" style="display:table-cell"><img src="../../images/forward.png"></a></div>
+                                    <div><a href="#" style="display:table-cell"><img src="../../images/star.png"></a></div>
+                                    <div><a href="#" style="display:table-cell"><img src="../../images/delete.png"></a></div>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="404.html" class="btn btn-primary btn-lg btn-block">Load more</a>
                     </div>
                 </div>
             </div>

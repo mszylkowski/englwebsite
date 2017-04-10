@@ -51,34 +51,38 @@
                     </div><!-- /.navbar-collapse -->
                 </div><!-- /.container-fluid -->
             </nav>
-            <div class="row dashboard"><!-- body of webpage -->
-                <div class="col-md-4 dashboard-left-col">
-                    <canvas id="myChart" width="100" height="100"></canvas>
-                    <script>
-                        var ctx = document.getElementById("myChart");
-                        var myChart = new Chart(ctx, {
-                            type: 'line',
-                            data: {
-                                datasets: [{
-                                    label: 'Savings',
-                                    data: [12, 19, 3, 5, 2, 3]
-                                }]
-                            },
-                            options: {
-                                scales: {
-                                    yAxes: [{
-                                        ticks: {
-                                            beginAtZero:true
-                                        }
+            <div><!-- body of webpage -->
+                <p>Please treat all material in this page as confidential. Do not allow other members of the institution access this dashboard</p>
+                <div class="row dashboard">
+                    <div class="col-md-4 dashboard-left-col">
+                        <canvas id="myChart" width="100" height="100"></canvas>
+                        <script>
+                            var ctx = document.getElementById("myChart");
+                            var myChart = new Chart(ctx, {
+                                type: 'line',
+                                data: {
+                                    datasets: [{
+                                        label: 'Savings',
+                                        data: [12, 19, 3, 5, 2, 3]
                                     }]
+                                },
+                                options: {
+                                    scales: {
+                                        yAxes: [{
+                                            ticks: {
+                                                beginAtZero:true
+                                            }
+                                        }]
+                                    }
                                 }
-                            }
-                        });
-                    </script>
-<p>Made by Maria Ramos, Matias Szylkowski, Simon Moreno and Vicente Blat. All materials are property of HelthWyzer Inc. Website designed based on the novel "Oryx and Crake" by Margaret Atwood.</p>
-                </div>
-                <div class="col-md-8 dashboard-right-col">
-                    <p>Made by Maria Ramos, Matias Szylkowski, Simon Moreno and Vicente Blat. All materials are property of HelthWyzer Inc. Website designed based on the novel "Oryx and Crake" by Margaret Atwood.</p>
+                            });
+                        </script>
+    <p>Made by Maria Ramos, Matias Szylkowski, Simon Moreno and Vicente Blat. All materials are property of HelthWyzer Inc. Website designed based on the novel "Oryx and Crake" by Margaret Atwood.</p>
+                    </div>
+                    <div class="col-md-8 dashboard-right-col">
+                        <h2>Welcome back Crake!</h2>
+                        <p>Made by Maria Ramos, Matias Szylkowski, Simon Moreno and Vicente Blat. All materials are property of HelthWyzer Inc. Website designed based on the novel "Oryx and Crake" by Margaret Atwood.</p>
+                    </div>
                 </div>
             </div>
         </div>
